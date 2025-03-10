@@ -17,8 +17,7 @@ if [ $ip_count -gt 0 ]; then
 else
     echo "File P_L.txt has no new URL ."
 fi
-# cp P_L.txt urls.csv
-# cp urls.csv /home/me-ansible/provision/roles/IOCTracker/templates/
+
 
 if file_not_empty "urls.csv"; then
   echo "urls.csv is not empty, running QradarAPIRefrenceurl.py..."
